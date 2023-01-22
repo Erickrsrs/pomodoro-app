@@ -7,13 +7,17 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "import", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "import", "prettier", "react-hooks"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "eslint-config-prettier"
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "prettier"
   ],
-  "rules": {}
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
 }
