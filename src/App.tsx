@@ -1,5 +1,11 @@
+import { PomodoroTimer } from './components/PomodoroTimer';
+
 function App() {
-  return <div>hello world</div>;
+  return (
+    <div>
+      <PomodoroTimer pomodoroTime={1500} shortRestTime={300} longRestTime={900} cycles={4} />
+    </div>
+  );
 }
 
 export default App;
